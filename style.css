@@ -93,9 +93,36 @@ dialog {
 }
 #library-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     height: 1fr;
     background-color: red;
     grid-area: 2 / 2 / 3 / 3;
+}
+#BookCard {
+    height: 100px;
+    width: clamp(300px, 800px, 900px);
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Read-Status {
+    background-color: rgb(30, 92, 30);
+}
+#Read-Status:hover {
+    background-color: rgb(60, 116, 60);
+}
+#Not-Read-Status:hover {
+    background-color: rgb(194, 65, 65);
+}
+#Not-Read-Status  {
+    background-color: rgb(194, 23, 23);
+}
+#Read-Status , #Not-Read-Status {
+    height: 30px;
+    width: 100px;
+    border: none;
 }
