@@ -1,13 +1,101 @@
 body, html {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+#library-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+}
+#header-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 400xp;
+    width: 220px;
+    font-size: 40px;
+}
+#header-button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    background-color: rgb(30, 92, 30);
+}
+#header-button:hover {
+    background-color: rgb(60, 116, 60);
+}
+dialog {
+    height: 260px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+}
+#dialog-btn-container {
+    display: flex;
+    height: 20px;
+    width: 300xp;
+    justify-content: start;
+}
+#dialog-btn {
+    background-color: white;
+    color: red;
+    border: none;
+}
+#dialog-btn:hover {
+    background-color: rgba(117, 112, 112, 0.562);
+}
+.form-item-container {
+    display: flex;
+    width: 300px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-item {
+    display: flex;
+    width: 300px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Read {
+    background-color: rgb(30, 92, 30);
+}
+#Read:hover {
+    background-color: rgb(60, 116, 60);
+}
+#Not-Read:hover {
+    background-color: rgb(194, 65, 65);
+}
+#Not-Read {
+    background-color: rgb(194, 23, 23);
+}
+#Read, #Not-Read, #submitBtn {
+    height: 30px;
+    width: 100px;
+    border: none;
+}
+#submitBtn {
+    background-color: rgba(131, 123, 123, 0.699);
+}
+#submitBtn:hover {
+    background-color: rgba(82, 77, 77, 0.699);
 }
 #library-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 1fr;
     background-color: red;
+    grid-area: 2 / 2 / 3 / 3;
 }
