@@ -1,1 +1,2 @@
 # Library
+This is a project from the Odin Project called Library. The goal was to create a "library" through the use of objects. Addtionally, users can create "books" by defining the title, author, whether the book was read and the ability to delete books. Additionally, this project makes no use of storing the data (both locally or in a database, since i'll be learning that soon.) here is a live preview: https://rainofstone.github.io/Library/
