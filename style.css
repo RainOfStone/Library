@@ -93,8 +93,8 @@ dialog {
 }
 #library-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
+    align-items:center;
     flex-direction: column;
     height: 1fr;
     background-color: red;
@@ -124,5 +124,14 @@ dialog {
 #Read-Status , #Not-Read-Status {
     height: 30px;
     width: 100px;
+    border: none;
+}
+#BookCardTitle, #BookCardAuthor, #BookCardPages {
+    font-size: 22px;
+}
+#Delete {
+    height: 30px;
+    width: 30px;
+    color: red;
     border: none;
 }
